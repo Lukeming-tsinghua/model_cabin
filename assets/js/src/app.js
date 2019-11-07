@@ -2,7 +2,6 @@ var app = function() {
 
     $(function() {
         toggleSettings();
-        switchTheme();
         navToggleRight();
         navToggleLeft();
         navToggleSub();
@@ -14,8 +13,6 @@ var app = function() {
         switcheryToggle();
         fullscreenWidget();
         fullscreenMode();
-
-
     });
 
     var toggleSettings = function() {
@@ -31,14 +28,6 @@ var app = function() {
                 }, 150);
                 $(this).removeClass('closed').addClass('open');
             }
-        });
-    };
-
-    var switchTheme = function() {
-        $('.theme-style-wrapper').click(function() {
-            $('#main-wrapper').attr('class', '');
-            var themeValue = $(this).data('theme');
-            $('#main-wrapper').addClass(themeValue);
         });
     };
 
